@@ -1,0 +1,18 @@
+version: "3.7"
+
+# 컨테이너. 
+services:
+  front:
+    build: ./FrontEnd(webserver)
+    ports:
+      - "5001:5001"
+
+  api:
+    build: ./BackEnd(api_server)
+    # 외부에선 api 접속할일 없으니까. 
+    # ports:
+    #   - "3000:3000"
+      
+
+
+# docker stop $(docker ps -aq); docker rm $(docker ps -aq); docker image prune -a
