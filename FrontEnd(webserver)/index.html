@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
 
-</script>
 <body>
-    <button onclick="">dffd</button>    
+    <input type="button" id="button1" onclick="button1_click();" value="버튼1" />
+<script>
+function button1_click() {
+
+    fetch("http://localhost:3000").then((response) =>
+    // fetch("https://google.com").then((response) =>
+    // console.log(response)
+        alert('asdsd:s '+response)
+    );
+
+
+
+    
+	// console.log("버튼1을 누르셨습니다.");
+}
+</script>
+
 </body>
 
 </html>
